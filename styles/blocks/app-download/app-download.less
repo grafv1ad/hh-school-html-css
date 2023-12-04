@@ -1,0 +1,17 @@
+@apps: app-store, google-play;
+
+.app-download {
+    display: flex;
+    gap: 8px;
+
+    &__item {
+        width: 140px;
+        height: 40px;
+
+        each(@apps, {
+            &_@{value} {
+                background-image: url('images/@{value}.svg');
+            }
+        })
+    }
+}

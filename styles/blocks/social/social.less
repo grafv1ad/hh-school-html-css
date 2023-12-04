@@ -1,0 +1,17 @@
+@social: facebook, twitter, vk, instagram;
+
+.social {
+    display: flex;
+    gap: 15px;
+
+    &__item {
+        width: 36px;
+        height: 36px;
+        
+        each(@social, {
+            &_@{value} {
+                background-image: url('images/@{value}.svg');
+            }
+        })
+    }
+}
