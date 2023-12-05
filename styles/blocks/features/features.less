@@ -1,0 +1,41 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &-image {
+            width: 40px;
+            height: 40px;
+        }
+
+        &-text {
+            line-height: 140%;
+            padding: 0 15px 0 0;
+        }
+    }
+
+    @media @screen-gt-s {
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__item {
+            gap: 10px;
+            flex-basis: calc(100% / 3);
+
+            &-text {
+                padding: 0;
+            }
+        }
+    }
+
+    @media @screen-gt-m {
+        &__item {
+            gap: 30px;
+        }
+    }
+}
