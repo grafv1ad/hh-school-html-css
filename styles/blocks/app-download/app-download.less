@@ -7,6 +7,13 @@
     &__item {
         width: 140px;
         height: 40px;
+        border: 1px solid #ccc;
+        border-radius: 1px;
+        transition: border-color .2s;
+
+        &:hover {
+            border-color: #fff;
+        }
 
         each(@apps, {
             &_@{value} {

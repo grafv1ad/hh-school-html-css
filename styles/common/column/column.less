@@ -4,17 +4,25 @@
 
 
 .column-wrapper {
+    --width: 100%;
+    width: var(--width);
+    box-sizing: border-box;
     padding-left: 15px;
     padding-right: 15px;
 
     @media @screen-gt-s {
-        width: 690px;
+        --width: 690px;
         margin: 0 auto;
         padding: 0;
     }
 
     @media @screen-gt-m {
-        width: 930px;
+        --width: 930px;
+
+        &_right-full {
+            margin: 0 0 0 auto;
+            width: calc(100% - (100% - var(--width)) / 2);
+        }
     }
 }
 
