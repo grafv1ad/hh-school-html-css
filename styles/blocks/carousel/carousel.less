@@ -1,0 +1,74 @@
+.carousel {
+    --vertical-padding: 30px;
+    --image-height: 200px;
+    --slide-gap: 15px;
+    background: #f9f9f9;
+    padding: var(--vertical-padding) 0;
+
+    &__slide {
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--slide-gap);
+
+            @media @screen-gt-s {
+                --slide-gap: 30px;
+                flex-direction: row-reverse;
+            }
+        }
+
+        &-image {
+            width: 100%;
+            height: var(--image-height);
+            object-fit: contain;
+
+            @media @screen-gt-s {
+                --image-height: 333px;
+                height: unset;
+                max-height: var(--image-height);
+            }
+        }
+
+        &-text {
+            text-align: center;
+
+            @media @screen-gt-s {
+                text-align: left;
+            }
+        }
+
+        &-title {
+            margin: 0 0 10px;
+            
+            @media @screen-gt-s {
+                margin: 0 0 20px;
+            }
+        }
+
+        &-pagination-placeholder {
+            height: 8px;
+            background-color: tomato;
+
+            @media @screen-gt-s {
+                display: none;
+            }
+        }
+    }
+
+    &__pagination {
+        position: absolute;
+        left: 0;
+        top: calc(var(--vertical-padding) + var(--image-height) + var(--slide-gap));
+        width: 100%;
+
+        @media @screen-gt-s {
+            top: unset;
+            bottom: 20px;
+        }
+    }
+
+    @media @screen-gt-s {
+        --vertical-padding: 55px;
+    }
+}
