@@ -16,6 +16,10 @@
                 --slide-gap: 30px;
                 flex-direction: row-reverse;
             }
+
+            @media @screen-gt-m {
+                --slide-gap: 90px;
+            }
         }
 
         &-image {
@@ -27,6 +31,12 @@
                 --image-height: 333px;
                 height: unset;
                 max-height: var(--image-height);
+            }
+
+            @media @screen-gt-m {
+                --image-height: 360px;
+                object-position: left center;
+                padding: 0 90px 0 0;
             }
         }
 
@@ -70,5 +80,9 @@
 
     @media @screen-gt-s {
         --vertical-padding: 55px;
+    }
+
+    @media @screen-gt-m {
+        --vertical-padding: 60px;
     }
 }
