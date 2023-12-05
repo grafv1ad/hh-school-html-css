@@ -1,6 +1,39 @@
 .header {
     background-color: var(--color-dark);;
 
+    &__top {
+        display: none;
+        background: #fff;
+        padding: 12px 0;
+
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &-city {
+            color: var(--color-gray);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            transition: color .2s;
+
+            &:hover {
+                color: var(--color-primary);
+            }
+        }
+
+        &-menu {
+            color: #609fcf;
+        }
+
+        @media @screen-gt-s {
+            display: block;
+        }
+    }
+
     &__content {
         display: flex;
         align-items: center;
@@ -51,6 +84,11 @@
             padding: 0 15px;
             border-radius: 19px;
             font-size: 14px;
+            transition: border-color .2s;
+
+            &:hover {
+                border-color: #fff;
+            }
         }
     }
 
