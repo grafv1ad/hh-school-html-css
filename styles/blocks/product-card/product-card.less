@@ -9,6 +9,12 @@
     display: block;
     margin-bottom: 30px;
 
+    &:hover {
+        .product-card__name {
+            color: var(--color-primary);
+        }
+    }
+
     &__image-container {
         position: relative;
         max-width: 290px;
@@ -39,6 +45,7 @@
 
     &__name {
         margin-bottom: 5px;
+        transition: color .2s;
     }
 
     &__old-price {
