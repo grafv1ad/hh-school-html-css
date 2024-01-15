@@ -8,6 +8,32 @@
     </head>
     <body>
         <header class="header">
+            <div class="header__top">
+                <div class="column-wrapper">
+                    <div class="header__top-content">
+                        <button class="header__top-city">Москва</button>
+                        <div class="header__top-menu">
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <a href="#" class="menu-list__link">Шоурум</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a href="#" class="menu-list__link">Оплата</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a href="#" class="menu-list__link">Доставка</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a href="#" class="menu-list__link">Самовывоз</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a href="#" class="menu-list__link">Контактная информация</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="column-wrapper">
                 <div class="header__content">
                     <a href="/" class="logo">
@@ -17,16 +43,16 @@
                     <nav class="menu">
                         <ul class="menu-list">
                             <li class="menu-list__item">
-                                <a href="#" class="menu-list__link">Одежда</a>
+                                <a href="#" class="menu-list__link menu-list__link_hover-blue">Одежда</a>
                             </li>
                             <li class="menu-list__item">
-                                <a href="#" class="menu-list__link">Сумки</a>
+                                <a href="#" class="menu-list__link menu-list__link_hover-blue">Сумки</a>
                             </li>
                             <li class="menu-list__item">
-                                <a href="#" class="menu-list__link">Аксессуары</a>
+                                <a href="#" class="menu-list__link menu-list__link_hover-blue">Аксессуары</a>
                             </li>
                             <li class="menu-list__item">
-                                <a href="#" class="menu-list__link">Офисные принадлежности</a>
+                                <a href="#" class="menu-list__link menu-list__link_hover-blue">Офисные принадлежности</a>
                             </li>
                         </ul>
                     </nav>
@@ -41,6 +67,38 @@
                 </div>
             </div>
         </header>
+
+        <div class="section-content section-content_padding-top-0">
+            <div class="carousel swiper">
+                <div class="swiper-wrapper">
+                    <div class="carousel__slide swiper-slide">
+                        <div class="column-wrapper column-wrapper_right-full">
+                            <div class="carousel__slide-content">
+                                <img src="images/carousel/carousel-1.png" alt="" class="carousel__slide-image">
+                                <div class="carousel__slide-pagination-placeholder"></div>
+                                <div class="carousel__slide-text">
+                                    <div class="carousel__slide-title heading">Мужская и&nbsp;женская одежда с&nbsp;символикой HeadHunter</div>
+                                    <a href="#" class="button">Перейти в каталог</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__slide swiper-slide">
+                        <div class="column-wrapper column-wrapper_right-full">
+                            <div class="carousel__slide-content">
+                                <img src="images/carousel/carousel-2.png" alt="" class="carousel__slide-image">
+                                <div class="carousel__slide-pagination-placeholder"></div>
+                                <div class="carousel__slide-text">
+                                    <div class="carousel__slide-title heading">Офисные принадлежности с&nbsp;символикой HeadHunter</div>
+                                    <a href="#" class="button">Перейти в каталог</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__pagination pagination swiper-pagination"></div>
+            </div>
+        </div>
 
         <section class="section-content">
             <div class="column-wrapper">
@@ -187,6 +245,8 @@
             </div>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="js/grid.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

@@ -7,7 +7,14 @@
     &__item {
         width: 36px;
         height: 36px;
-        
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        transition: border-color .2s;
+
+        &:hover {
+            border-color: #fff;
+        }
+
         each(@social, {
             &_@{value} {
                 background-image: url('images/@{value}.svg');
